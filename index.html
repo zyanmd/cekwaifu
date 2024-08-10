@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="google-site-verification" content="2j7FhnX0DegKI54wFvcdNCH8sUtjXxa5AuyPQNFCqos" />
+    <meta name="keywords" content="Cek Waifu online" />
+    <meta name="keywords" content="Cek Waifumu" />
+    <meta name="description" content="Cek Waifumu sekarang. Cek waifu online dan gratis" />
+    <title>Cek Waifumu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <h1><i class="fas fa-user"></i> Cek Waifumu</h1>
+            <input type="text" id="nameInput" class="form-control" placeholder="Masukkan nama karakter. Example: Asuna">
+            <button id="cekButton" class="btn btn-primary mt-3" onclick="cekWaifu()"><i class="fas fa-search"></i> Cek</button>
+        </div>
+        <div class="result-box" id="result">
+            <div class="loading-spinner" id="loadingSpinner"></div>
+            <div class="result-content">
+                <h2 class="waifu-name" id="waifuName"></h2>
+                <div class="waifu-info"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background-audio" autoplay>
+        <source src="https://k.top4top.io/m_3107ip6vh2.mp3" type="audio/mpeg">
+        <source src="https://j.top4top.io/m_31070zuda1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://instagram.com/initiaann_0705" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/dreamliner21" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p class="footer-text"><b><i class="fas fa-user-circle"></i> DREAMLINER21</b></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

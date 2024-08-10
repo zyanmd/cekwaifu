@@ -1,0 +1,109 @@
+body {
+    background-image: url('https://graph.org/file/133bdfbcd99f84ee39269.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7); /* Fallback for browsers that do not support backdrop-filter */
+    backdrop-filter: blur(10px); /* Efek blur untuk background */
+}
+
+.result-box {
+    position: relative;
+}
+
+.result-content {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.result-box img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none; /* Start with image hidden */
+    cursor: not-allowed;
+}
+
+.cooldown {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.loading-spinner {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+.waifu-info {
+    display: none;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+    .container {
+        padding: 40px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.footer .social-links {
+    margin-bottom: 10px;
+}
+
+.footer .social-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icon:hover {
+    color: #f39c12; /* Change this color to the one you prefer */
+}
+
+.footer .footer-text {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
