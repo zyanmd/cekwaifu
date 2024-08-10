@@ -1,3 +1,6 @@
+// Tambahkan event listener untuk tombol "Cek"
+document.getElementById('cekButton').addEventListener('click', cekWaifu);
+
 function cekWaifu() {
     const waifuName = document.getElementById('nameInput').value.trim();
     const apiUrl = `https://api.jikan.moe/v4/characters?q=${waifuName}&limit=1`;
@@ -42,7 +45,7 @@ function cekWaifu() {
         Swal.fire({
             icon: 'warning',
             title: 'Peringatan',
-            text: 'Silakan masukkan nama anda terlebih dahulu.',
+            text: 'Silakan masukkan nama karakter terlebih dahulu.',
         });
     }
 }
